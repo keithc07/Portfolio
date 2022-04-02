@@ -160,16 +160,24 @@
 }
 
 /* text component: relative position */
-.header-container1 {
-    text-decoration: underline;
+.index-header-container {
     font-size: 2rem;
     position: relative;
     Top: 200px;
     color: white;
 }
 
+/* text component: relative position */
+.index-subheader {
+    margin-top: 0;
+    font-size: 40px;
+    color: white;
+    word-wrap: break-word;
+}
+
 /* graphic component: transformation*/
-.header-container1 > h1 {
+.index-h1 {
+    text-decoration: underline;
     margin-bottom: 0px;
     transform: rotate(360deg);
     transition: 3s;
@@ -300,15 +308,7 @@
     margin: 10px;
 }
 
-/* text component: relative position */
-.sub-header {
-    margin-top: 0;
-    position: relative;
-    font-size: 40px;
-    top: 200px;
-    color: white;
-    word-wrap: break-word;
-}
+
 
 
 /* graphic component: button */
@@ -510,10 +510,10 @@ header > ul {
         text-align: center;
     }
 
-    .header-container1 {
+    .index-header-container {
         font-size: 1.5rem;
     }
-    .sub-header {
+    .index-subheader {
         font-size: 1.8rem;
     }
     button {
@@ -623,11 +623,11 @@ header > ul {
 
 /* responsive design */
 @media screen and (max-width: 520px) {
-    .header-container1 {
+    .index-header-container {
         font-size: 1rem;
         bottom: 800px;
     }
-    .sub-header {
+    .index-subheader {
         font-size: 1.6rem;
     }
     button {
