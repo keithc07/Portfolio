@@ -70,6 +70,7 @@
     background-image: url(background1.jpeg);
     background-size: cover;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 
 .nav-bar-container {
@@ -91,14 +92,13 @@
     color: #FF4848;
 }
 
-.profile-header-container {
+.eachpage-header-container {
     display: flex;
     justify-content: center;
     font-size: 1.8rem;
 }
 
-.profile-h1 {
-    color: #fff;
+.eachpage-h1 {
     text-decoration: underline;
 }
 
@@ -117,13 +117,12 @@
     width: 33%;
 }
 
-.profile-subheadings {
-    color: #fff;
+.eachpage-h2 {
     font-size: 2rem;
+    margin: 1rem 0;
 }
 
 .profile-p {
-    color: #fff;
     font-size: 1rem;
     background-color: #000;
 }
@@ -142,6 +141,99 @@
 .profile-icon-p {
     margin: 1rem;
 }
+
+.resume-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.resume-part-position {
+    width: 40%;
+}
+
+.resume-h3 {
+    margin: 0.5rem 0;
+    text-decoration: underline;
+    background-color: #000;
+}
+
+.resume-p {
+    margin: 0.5rem 0;
+    background-color: #000;
+}
+
+.resume-time {
+    font-style: italic;
+}
+
+.resume-ul-work {    
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem;
+}
+
+.resume-li-work {
+    margin: 0.3rem 0;
+    background-color: #000;
+}
+
+.resume-li-work::before {
+    content: "\21E8";
+}
+
+.resume-education {
+    margin: 0.3rem 0;
+}
+
+.resume-education::before {
+    content: "\272F";
+}
+
+.resume-ul-skills {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+}
+
+.resume-li-skills {
+    background-color: #fff;
+    margin: 0.3rem 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.resume-ul-language {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: #7579E7;
+    padding: 0px;
+    margin: 0px;
+}
+
+.resume-dl {
+    margin: 0.5rem 0;
+    background-color: #000;
+    display: block;
+    max-width: 15rem;
+}
+
+.resume-link {
+    text-decoration: none;
+    color: #FFD31D;
+}
+
+.resume-link:hover {
+    color: #81B214;
+}
+
 
 @media screen and (max-width: 500px) {
     .index-h1 {
@@ -169,11 +261,11 @@
         text-align: center;
         width: 70%
     }
-    .profile-h1 {
+    .eachpage-h1 {
         font-size: 2rem;
         margin: 0;
     }
-    .profile-subheadings {
+    .eachpage-h2 {
         font-size: 1.5rem;
     }
     .profile-part-containers {

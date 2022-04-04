@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- graphic component: background-image with font-family-->
 <html lang="en" class="profile-page">
 <head>
     <meta charset="UTF-8">
@@ -11,101 +12,108 @@
 </head>
 
 <body>
-    <!-- graphic component: background-image -->
-    <div class="container3">
-        <!-- text component: navigation bar -->
-        <nav>
-            <ul class="nav-bar-container">
-                <li><a href="index.html" class="nav-properties">🏠Home</a></li>
-                <li><a href="profile.html" class="nav-properties">🙍‍♂️Profile</a></li>
-                <li><a href="resume.html" class="nav-properties">📝Resume</a></li>
-                <li><a href="other links.html" class="nav-properties">🔗Other Links</a></li>
-            </ul>
-        </nav>
-        
-        <!-- text component: flex-box with items center-algiend within -->
-        <!-- graphic component: underline the text  -->
-        <header>
-            <div class="header-container3">
-                <h1>Resume</h1>
-            </div>
-        </header>
+    <!-- text component: navigation bar -->
+    <nav>
+        <ul class="nav-bar-container">
+            <li><a href="index.html" class="nav-properties">🏠Home</a></li>
+            <li><a href="profile.html" class="nav-properties">🙍‍♂️Profile</a></li>
+            <li><a href="resume.html" class="nav-properties">📝Resume</a></li>
+            <li><a href="other links.html" class="nav-properties">🔗Other Links</a></li>
+        </ul>
+    </nav>
+
+    <!-- text component: flex-box with items center-algiend within -->
+    <!-- graphic component: underline the text  -->
+    <header class="eachpage-header-container">
+        <h1 class="eachpage-h1">Resume</h1>
+    </header>
+
         <!-- text component: flex-box-->
-        <div class="resume-container">
+        <main class="resume-container">
             <!-- text component: flex-item -->
-            <section class="box-4">
-                <h2>Experiences:</h2>
-                <h3>Hamber Services Pty Ltd</h3>
-                    <!-- text component: italic -->
-                    <time datetime="2019-08-01 00:00">Aug 2019 - Nov 2020</time>
-                    <span>| Customer Service Agent</span>
-                        <!-- graphic component: Marker -->
-                        <p>&#8680; Facilitated and answered customer queries</p>
-                        <p>&#8680; Replied client emails and phone calls</p>
-                        <p>&#8680; Used CRM for internal and external communications</p>
-                        <p>&#8680; Monitored and analyzed customer transaction</p>
-                        <p>&#8680; Prepared operation performance report</p>
-                        <p>&#8680; Coached new colleagues and provided feedbacks</p>
-                <h3>LEDeco</h3>
-                    <!-- text component: italic -->
-                    <time datetime="2018-01-01 00:00">Jan 2018 - Aug 2019</time>
-                    <span>| Family Business</span>
-                        <!-- graphic component: Marker -->
-                        <p>&#8680; Set up official websites</p>
-                        <p>&#8680; Analysed customer data</p>
-                        <p>&#8680; Participated online marketing courses held by Google</p>
-                        <p>&#8680; Answered customer queries</p>
-                <h3>Goldland Capital Group Pty Ltd</h3>
-                    <!-- text component: italic -->
-                    <time datetime="2016-11-01 00:00">Nov 2016 - Feb 2017</time>
-                    <span>| Business Associate</span>
-                        <!-- graphic component: Marker -->
-                        <p>&#8680; Provided relevant financial products information</p>
-                        <p>&#8680; Enhanced understanding of foreign exchange markets and OTC market</p>
-                        <p>&#8680; Built and maintained relationship with current and new customers</p>
-            </section>
+            <div class="resume-part-position">
+                <h2 class="eachpage-h2">Experiences:</h2>
+
+                <h3 class="resume-h3">Hamber Services Pty Ltd</h3>
+                <!-- text component: italic -->
+                <p class="resume-p"><time datetime="2019-08-01 00:00" class="resume-time">Aug 2019 - Nov 2020</time> | Customer Service Agent</p>
+                <!-- graphic component: Marker -->
+                <ul class="resume-ul-work">
+                    <li class="resume-li-work"> Facilitated and answered customer queries</li>
+                    <li class="resume-li-work"> Replied client emails and phone calls</li>
+                    <li class="resume-li-work"> Used CRM for internal and external communications</li>
+                    <li class="resume-li-work"> Monitored and analyzed customer transaction</li>
+                    <li class="resume-li-work"> Prepared operation performance report</li>
+                    <li class="resume-li-work"> Coached new colleagues and provided feedbacks</li>
+                </ul>
+
+                <h3 class="resume-h3">LEDeco</h3>
+                <!-- text component: italic -->
+                <p class="resume-p"><time datetime="2018-01-01 00:00" class="resume-time">Jan 2018 - Aug 2019</time> | Family Business</p>
+                <!-- graphic component: Marker -->
+                <ul class="resume-ul-work">
+                    <li class="resume-li-work"> Set up official websites</li>
+                    <li class="resume-li-work"> Analysed customer data</li>
+                    <li class="resume-li-work"> Participated online marketing courses held by Google</li>
+                    <li class="resume-li-work"> Answered customer queries</li>
+                </ul>
+
+                <h3 class="resume-h3">Goldland Capital Group Pty Ltd</h3>
+                <!-- text component: italic -->
+                <p class="resume-p"><time datetime="2016-11-01 00:00" class="resume-time">Nov 2016 - Feb 2017</time> | Business Associate</p>
+                <!-- graphic component: Marker -->
+                <ul class="resume-ul-work">
+                    <li class="resume-li-work"> Provided relevant financial products information</li>
+                    <li class="resume-li-work"> Enhanced understanding of foreign exchange markets and OTC market</li>
+                    <li class="resume-li-work"> Built and maintained relationship with current and new customers</li>
+                </ul>
+            </div>
+
             <!-- text component: flex-item -->
-            <section class="box-4">
-                <h2>Education:</h2>
-                <h3>University of New South Wales (UNSW)</h3>
-                    <!-- text component: italic -->
-                    <time datetime="2014-03-01 00:00">2014 - 2017</time>
-                        <!-- graphic component: Marker -->
-                        <p>&#10031; Bachelor of Commerce (Accounting and Finance)</p>
-                <h3>Coder Academy</h3>
-                    <!-- text component: italic -->
-                    <time datetime="2021-08-01 00:00">2021 - 2022</time>
-                        <!-- graphic component: Marker -->
-                        <p>&#10031; Diploma of Information Technology (Higher Education) - Fast Track Coding Boot Camp</p>
-                <h2>Skills</h2>
-                    <!-- graphic component: text background color and colored text -->
-                    <ul class="skills">
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>Git</li>
-                        <li>Ruby</li>
-                        <li>Ruby on Rails</li>
-                        <li>ReactJS</li>
-                        <li>JavaScript</li>
-                        <li>NodeJS</li>
-                        <li>PostgreSQL</li>
-                        <li>AWS S3</li>
-                    </ul>
-                <h2>Languages</h2>
-                    <!-- graphic component: text background color and colored text -->
-                    <ul class="languages">
-                        <li>English</li>
-                        <li>Cantonese</li>
-                        <li>Mandarin</li>
-                        <li>(Basic) Japanese</li>
-                    </ul>
-                    <p>
-                        <!-- graphic component: icon -->
-                        <!-- text component: hyperlink -->
-                        <img src="pdf.jpeg" alt="pdf-icon" width="32" height="32"/>  Resume Link: <a href="resume.pdf">Resume.pdf</a>
-                    </p>
-            </section>
-        </div>
-    </div>
+            <div class="resume-part-position">
+                <h2 class="eachpage-h2">Education:</h2>
+                <h3 class="resume-h3">University of New South Wales (UNSW)</h3>
+                <!-- text component: italic -->
+                <time datetime="2014-03-01 00:00" class="resume-time">2014 - 2017</time>
+                <!-- graphic component: Marker -->
+                <p class="resume-education"> Bachelor of Commerce (Accounting and Finance)</p>
+                <h3 class="resume-h3">Coder Academy</h3>
+                <!-- text component: italic -->
+                <time datetime="2021-08-01 00:00" class="resume-time">2021 - 2022</time>
+                <!-- graphic component: Marker -->
+                <p class="resume-education"> Diploma of Information Technology (Higher Education) - Fast Track Coding Boot Camp</p>
+                
+                <h2 class="eachpage-h2">Skills</h2>
+                <!-- graphic component: text background color and colored text -->
+                <ul class="resume-ul-skills">
+                    <li class="resume-li-skills">Html</li>
+                    <li class="resume-li-skills">CSS</li>
+                    <li class="resume-li-skills">Git</li>
+                    <li class="resume-li-skills">Ruby</li>
+                    <li class="resume-li-skills">Ruby on Rails</li>
+                    <li class="resume-li-skills">ReactJS</li>
+                    <li class="resume-li-skills">JavaScript</li>
+                    <li class="resume-li-skills">NodeJS</li>
+                    <li class="resume-li-skills">Express</li>
+                    <li class="resume-li-skills">PostgreSQL</li>
+                    <li class="resume-li-skills">AWS S3</li>
+                </ul>
+
+                <h2 class="eachpage-h2">Languages</h2>
+                <!-- graphic component: text background color and colored text -->
+                <ul class="resume-ul-language">
+                    <li class="resume-li-skills">English</li>
+                    <li class="resume-li-skills">Cantonese</li>
+                    <li class="resume-li-skills">Mandarin</li>
+                </ul>
+
+                <!-- graphic component: icon -->
+                <!-- text component: hyperlink -->
+                <p class="resume-dl">
+                    Resume Link: <img src="pdf.jpeg" alt="pdf-icon" width="32" height="32"/><a href="resume.pdf" class="resume-link">Resume.pdf</a>
+                </p>
+
+                </div>
+        </main>
 </body>
 </html>
