@@ -10,7 +10,7 @@
 
   * Sitemap:
   
-    ![screenshot1](docs\screenshot1.png)
+    ![screenshot1](docs/screenshot1.png)
     
   * Screenshots:
   
