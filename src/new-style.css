@@ -162,7 +162,7 @@
 }
 
 .resume-part-position {
-    width: 40%;
+    width: 45%;
 }
 
 .resume-h3 {
@@ -178,6 +178,14 @@
 
 .resume-time {
     font-style: italic;
+}
+
+.resume-ul-projects {
+    padding-left: 1.5rem;
+}
+
+.resume-li-projects {
+    margin: 0.5rem 0;
 }
 
 .resume-ul-work {    
