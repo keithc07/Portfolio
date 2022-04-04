@@ -246,6 +246,41 @@
     color: #81B214;
 }
 
+.other-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13rem 0 0 0 ;
+    font-size: 1.8rem;
+}
+
+.other-links-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    
+}
+
+.other-links-icon {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #FFD31D;
+    font-size: 2rem;
+}
+
+.other-links-p {
+    margin: 0.5rem 0;
+}
+
+.other-links-icon:hover {
+    color: #81B214;
+}
+
+
 
 @media screen and (max-width: 500px) {
     .index-h1 {
@@ -300,6 +335,9 @@
     }
     .resume-h3 {
         font-size: 1rem;
+    }
+    .other-links-icon {
+        font-size: 1.2rem;
     }
 }
 
