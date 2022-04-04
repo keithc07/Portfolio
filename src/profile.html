@@ -1,64 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- graphic component: background-image with font-family -->
+<html lang="en" class="profile-page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keith Ching's Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new-style.css">
     <!-- <link rel="stylesheet" href="style.css" integrity="sha384-0IA9L0jzMVVgmnaMANsFbCAgJAyg5BsXZWuMga5nsf6ZPZ4m4YTUyhyDk2XtfCNW"> -->
     <!-- graphic component: title icon-->
     <link rel="icon" href="icon.jpeg" type="image/gif" sizes="16x16">
 </head>
 
 <body>
-    <!-- graphic component: background-image -->
-    <div class="container2">
-        <header>
-            <!-- text component: navigation bar -->
-            <ul class="nav-bar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="other links.html">Other Links</a></li>
-            </ul>
-             <!-- text component: flex-box with items center-algiend within -->
-            <!-- graphic component: underline the text  -->
-            <div class="header-container2">
-                <h1>Profile</h1>
-            </div>
-        </header>
-        <!-- text component: flex-box -->
-        <div class="profile-container">
-            <!-- text component: flex-item -->
-            <section class="box-1">
-                <h2>Names:</h2>
-                <p>Keith Kwan Ho Ching</p>
-                <h2>Contact details:</h2>
-                <div class="icon">
-                    <!-- graphic component: icon image next to the text-->
-                    <img src="phone-call.png" alt="phone-icon" width="32" height="32"/>
-                    <!-- text component: hyperlink to phone number with pseudo class to change color-->
-                    <a href="tel:0415-376-087"><span>Phone Number: 0415-376-087</span></a>
-                </div>
-                <div class="icon">
-                    <!-- graphic component: icon image next to the text-->
-                    <img src="email.jpeg" alt="email-icon" width="32" height="32"/>
-                    <!-- text component: hyperlink to email with pseudo class to change color-->
-                    <a href="mailto:keithckh1995@gmail.com"><span>Email: keithckh1995@gmail.com</span></a>
-                </div>
-            </section>
-            <!-- text component: relative position with center alignment -->
-            <section class="box-2">
-                <!-- graphic component: profile picture-->
-                <img src="selfie.jpeg" alt="selfie"  width="180" height="300"/>
-            </section>
-            <!-- text component: flex-item -->
-            <section class="box-3">
-                <h2>About:</h2>
-                <p>I finished Bachelor of Commerce, majoring in Accounting and Finance, in UNSW few years ago and previously worked in a fintech company for more than 1 year. Recently, I studied a coding course in Coderacademy. Now I have good knowledge of front-end techniques and ready to go as a full-stack developer or software engineer.</p>
-                <p>I like to spend time on figuring out the superior way to fix some details and keen to keep myself update with the latest IT information and learn new programming skills and languages. Moreover, I like to collaborate as a team as we can learn from each other, and more ideas can be generated. Through previous experience, fast learning skill is demonstrated and can endure high-pressure working environment.</p>
-            </section>
-        </div>
+    <!-- text component: navigation bar -->
+    <nav>
+        <ul class="nav-bar-container">
+            <li><a href="index.html" class="nav-properties">🏠Home</a></li>
+            <li><a href="profile.html" class="nav-properties">🙍‍♂️Profile</a></li>
+            <li><a href="resume.html" class="nav-properties">📝Resume</a></li>
+            <li><a href="other links.html" class="nav-properties">🔗Other Links</a></li>
+        </ul>
+    </nav>
+    
+    <!-- text component: flex-box with center-algiend heading -->
+    <!-- graphic component: underline the text  -->
+    <header class="eachpage-header-container">
+        <h1 class="eachpage-h1">Profile</h1>
+    </header>
+    
+    <!-- text component: flex-box -->
+    <div class="profile-container">
+        <!-- text component: flex-item -->
+        <ul class="profile-part-containers">
+            <li>
+                <h2 class="eachpage-h2">Names:</h2>
+                <p class="profile-p">Keith Kwan Ho Ching</p>
+                <h2 class="eachpage-h2">Contact details:</h2>
+
+                <!-- graphic component: icon image next to the text-->
+                <!-- text component: hyperlink to phone number with pseudo class to change color-->
+                <a href="tel:+61415376087" class="profile-icon"><img src="phone-call.png" alt="phone-icon" width="32" height="32"/><p class="profile-icon-p">Phone Number: +61 415 376 087</p></a>
+
+                <!-- graphic component: icon image next to the text-->
+                <!-- text component: hyperlink to email with pseudo class to change color-->
+                <a href="mailto:keithckh1995@gmail.com" class="profile-icon"><img src="email.jpeg" alt="email-icon" width="32" height="32"/><p class="profile-icon-p">Email: keithckh1995@gmail.com</p></a>
+            </li>
+        </ul>
+
+        <figure class="profile-part-containers">
+        <!-- text component: relative position with center alignment -->
+        <!-- graphic component: profile picture-->
+            <img src="selfie.jpeg" alt="selfie"  width="180" height="300"/>
+        </figure>
+        
+        <!-- text component: flex-item -->
+        <ul class="profile-part-containers">
+            <li>
+                <h2 class="eachpage-h2">About:</h2>
+                <p class="profile-p">I completed Bachelor of Commerce Degree, majoring in Accounting and Finance, in UNSW in 2017 and worked in a fintech company for around 1.5 years. Most recently, I completed Information Technology Diploma in Coder Academy. Now I acquired the knowledge of both frontend and backend techniques and ready to go as a full-stack developer or software engineer.</p>
+                <p class="profile-p">I like to spend time on figuring out the superior way to coding. I keen to keep myself updated with the latest IT information and learning new programming skills and languages. Moreover, I like to collaborate as a team as we can learn from each other, and more ideas can be generated. Through previous experience, fast learning is demonstrated and able to endure high-pressure working environment.</p>
+            </li>
+        </ul>
     </div>
 </body>
 </html>

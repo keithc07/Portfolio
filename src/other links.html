@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- graphic component: background-image -->
+<html lang="en" class="profile-page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Other Links</title>
-    <link rel="stylesheet" href="style.css" integrity="sha384-0IA9L0jzMVVgmnaMANsFbCAgJAyg5BsXZWuMga5nsf6ZPZ4m4YTUyhyDk2XtfCNW">
+    <link rel="stylesheet" href="new-style.css">
+    <!-- <link rel="stylesheet" href="style.css" integrity="sha384-0IA9L0jzMVVgmnaMANsFbCAgJAyg5BsXZWuMga5nsf6ZPZ4m4YTUyhyDk2XtfCNW"> -->
     <!-- graphic component: title icon-->
     <link rel="icon" href="icon.jpeg" type="image/gif" sizes="16x16">
 </head>
 
 <body>
-    <!-- graphic component: background-image -->
-    <div class="container5">
-        <header>
-            <!-- text component: navigation bar -->
-            <ul class="nav-bar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="other links.html">Other Links</a></li>
-            </ul>
-             <!-- text component: relative position  -->
-            <div class="header-container5">
-                <h1>Other Links</h1>
-            </div>
-        </header>
-        <!-- text component: position relative  -->
-        <div class="box-7">
-            <img src="linkedin.jpeg" alt="linkedin-icon" width="32" height="32">
-            <!-- graphic component: remove underlines of hyperlink and change hyperlink color with pseudo-class -->
-            <a href="https://www.linkedin.com/in/keith-ching-8b0a2213a/"><span>Linkedin Profile</span></a>
-        </div>
-        <!-- text component: position relative  -->
-        <div class="box-7">
-            <img src="github.jpeg" alt="github-icon" width="32" height="32">
-            <!-- graphic component: remove underlines of hyperlink and change hyperlink color with pseudo-class -->
-            <a href="https://github.com/keithc07"><span>Github Profile</span></a>
-        </div>
-    </div>
+    <!-- text component: navigation bar -->
+    <nav>
+        <ul class="nav-bar-container">
+            <li><a href="index.html" class="nav-properties">🏠Home</a></li>
+            <li><a href="profile.html" class="nav-properties">🙍‍♂️Profile</a></li>
+            <li><a href="resume.html" class="nav-properties">📝Resume</a></li>
+            <li><a href="other links.html" class="nav-properties">🔗Other Links</a></li>
+        </ul>
+    </nav>
+
+    <!-- text component: relative position  -->
+    <header class="other-links-container">
+        <h1 class="eachpage-h1">Other Links</h1>
+    </header>
+
+    <!-- text component: position relative  -->
+    <!-- graphic component: remove underlines of hyperlink and change hyperlink color with pseudo-class -->
+    <ul class="other-links-ul">
+        <li><a href="https://www.linkedin.com/in/keith-ching-8b0a2213a/" class="other-links-icon"><img src="linkedin.jpeg" alt="linkedin-icon" width="32" height="32"><p class="other-links-p">Linkedin Profile</p></a></li>
+        <li><a href="https://github.com/keithc07" class="other-links-icon"><img src="github.jpeg" alt="github-icon" width="32" height="32"><p class="other-links-p">Github Profile</p></a></li>
+    </ul>
 </body>
 </html>

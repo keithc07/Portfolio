@@ -1,639 +1,362 @@
-/* text component: flex-box with relative position */
-.blog-container {
-    display: flex;
-    border-bottom: solid white;
-    width: 80%;
-    position: relative;
-    left: 10%;
-}
-
-/* text component: flex-item */
-.box-1 {
-    width: 20%;
-    margin-left: 300px;
-}
-
-/* text component: relative position and center alignment*/
-.box-2 {
-    position: relative;
-    text-align: center;
-    top: 50px;
-    width: 20%;
-}
-
-/* text component: flex-item */
-.box-3 {
-    width: 30%;
-    height: 80%;
-    margin-right: 100px;
-}
-
-/* text component: flex-item */
-.box-4 {
-    width: 40%;
-}
-
-/* graphic component: change the text position and font-size*/
-.box-4 > h3 {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-size: 30px;
-    color: white;
-}
-
-/* graphic component: change the text position and font-size */
-.box-4 > p {
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    margin: 5px;
-}
-
-/* graphic component: change the text position and font-size*/
-.box-4 > span {
-    color: white;
-    display: inline-block;
-    font-size: 20px;
-    margin: 5px;
-}
-
-/* text component: flex-item */
-.box-5 {
-    margin: 5px;
-}
-
-/* graphic component: change the position of image */
-.box-5 img {
-    object-fit: contain;
-    align-self: flex-start;
-}
-
-/* text component: change the flex-item ratio or position */
-.box-6 {
-    flex: 1 1 auto;
-    margin-left: 10px;
-    background-color: black;
-}
-
-.box-6 h3 {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.box-6 p {
-    margin: 10px 0;
-}
-
-/* graphic component: add color to hyperlinks*/
-.box-6 a{
-    color: #FFD31D;
-}
-
-/* graphic component: hyperlink color change with pseudo-class*/
-.box-6 a:hover {
-    color: #81B214;
-}
-
-/* text component: flex-item */
-.box-7 {
-    position: relative;
-    top: 200px;
-    margin: 30px;
-}
-.box-7 span {
-    font-size: 40px;
-    color: #FFD31D;
-}
-/* graphic component: remove underlines of hyperlink */
-.box-7 a {
-    text-decoration: none;
-}
-/* graphic component: hyperlink color change with pseudo-class*/
-.box-7 a:hover {
-    color: #81B214;
-}
-
-/* graphic component: background-image the whole page with items center-aligned within */
-.container1 {
-    background-image: url(background1.jpeg);
-    background-size: cover;
-    Width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-/* graphic component: background-image the whole page */
-.container2 {
-    background-image: url(background1.jpeg);
-    background-size: cover;
-    Width: 100%;
-    height: 100%;
-}
-
-/* graphic component: background-image the whole page */
-.container3 {
-    background-image: url(background1.jpeg);
-    background-size: cover;
-    Width: 100%;
+.index-page {
+    width: 100%;
     height: 100%;
     margin: 0;
-    padding-bottom: 300px;
-}
-
-/* graphic component: background-image the whole page */
-.container4 {
+    padding: 0;
     background-image: url(background1.jpeg);
     background-size: cover;
-    Width: 100%;
-    height: auto;
-}
-
-/* graphic component: background-image the whole page with items center-aligned within*/
-.container5 {
-    background-image: url(background1.jpeg);
-    background-size: cover;
-    Width: 100%;
-    height: 100%;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* text component: relative position */
+.index-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.index-position {
+    margin: 8rem 0 0 0;
+}
+
 .index-header-container {
     font-size: 2rem;
-    position: relative;
-    Top: 200px;
+    margin: 0 0 5rem 0;
     color: white;
 }
 
-/* text component: relative position */
-.index-subheader {
-    margin-top: 0;
-    font-size: 40px;
-    color: white;
-    word-wrap: break-word;
-}
-
-/* graphic component: transformation*/
 .index-h1 {
     text-decoration: underline;
-    margin-bottom: 0px;
+    margin-bottom: 0.5rem;
     transform: rotate(360deg);
     transition: 3s;
 } 
 
-/* text component: flex-box with items center-algiend within*/
-/* graphic component: underline the text */
-.header-container2 {
-    text-decoration: underline;
-    font-size: 2rem;
+.index-subheader {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.index-button-container {
     display: flex;
-    justify-content: center;
-    margin-left: 50px;
-    color: white;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+    height: 15rem;
 }
 
-/* text component: flex-box with items center-algiend within*/
-/* graphic component: underline the text */
-.header-container3 {
-    text-decoration: underline;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-/* text component: flex-box with items center-algiend within*/
-/* graphic component: underline the text */
-.header-container4 {
-    text-decoration: underline;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-/* text component: relative position */
-.header-container5 {
-    text-decoration: underline;
-    font-size: 2rem;
-    position: relative;
-    Top: 200px;
-    color: white;
-}
-
-/* text component: display inline-block*/
-.icon {
-    display: inline-block;
-    margin: 10px;
-}
-
-/* graphic component: remove underlines of hyperlinks */
-.icon > a {
+.index-button {
     text-decoration: none;
-}
-
-/* graphic component: change color of hyperlinks */
-.icon a > span  {
-    color: #FFD31D;
-}
-
-/* graphic component: change color of hyperlinks with pseudo class*/
-.icon a > span:hover {
-    color: #81B214;
-}
-
-/* graphic component: colored text*/
-/* text component: display inline-flex*/
-.languages {
-    list-style-type: none;
-    flex-direction: column;
-    display: inline-flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    color: #0E49B5;
-    padding: 0px;
-    margin: 0px;
-}
-
-/* graphic component: text background color */
-.languages > li {
-    background-color: #54E346;
-    margin: 10px;
-}
-
-/* text component: remove underlines of hyperlinks within navigation bar and position the bar on the top-right with flex-end*/
-.nav-bar {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    color: white;
-}
-
-/* text component: flex-box */
-.profile-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* text component: flex-box */
-.resume-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-/* graphic component: colored text */
-/* text component: display inline*/
-.skills {
-    list-style-type: none;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    color: #F7FD04;
-    padding: 0px;
-    margin: 0px;
-}
-
-/* graphic component: text background color */
-.skills > li {
-    background-color: #3DB2FF;
-    margin: 10px;
-}
-
-
-
-
-/* graphic component: button */
-button {
-    position: relative;
-    top: 200px;
-    border: 5px solid #C8C6C6;
-    background-color: #9E7777;
-    color: white;
-    border-radius: 5px;
-    margin: 45px;
-    width: auto;
-    padding: 15px;
-    font-size: 16px;
+    border: 0.2rem solid #C8C6C6;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    margin: 3rem;
+    padding: 1rem;
     font-weight: bold;
 }
 
-/* graphic component: button background color with pseudo-class*/
-button:hover {
+.index-button:hover {
     background-color: #185ADB;
 }
 
-h1 {
-    margin: auto;
-}
-
-/* graphic component: positioning background image*/
-html,body {
+.profile-page {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    background-image: url(background1.jpeg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 
-li {
-    margin: 20px;
-    font-size: 20px;
+.nav-bar-container {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
-/* graphic component: remove underlines of hyperlink text and create color*/
-li > a {
+.nav-properties {
     text-decoration: none;
     color: #96BAFF;
+    margin: 20px;
+    font-size: 1.2rem;
 }
 
-/* graphic component: changing the default color of hyperlinks after visiting*/
-li > a:visited {
-    color: #96BAFF;
-}
-
-/* graphic component: navigation bar text color change with pseudo-class*/
-li > a:hover {
+.nav-properties:hover {
     color: #FF4848;
 }
 
-/* text component: adjust the color and font size */
-p {
-    color: white;
-    font-size: 20px;
+.eachpage-header-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
 }
 
-/* graphic component: remove underlines of hyperlink text and create color*/
-p > a {
+.eachpage-h1 {
+    text-decoration: underline;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 70%;
+}
+
+.profile-part-containers {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    width: 33%;
+}
+
+.eachpage-h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.profile-p {
+    font-size: 1rem;
+    background-color: #000;
+}
+
+.profile-icon {
+    display: flex;
+    text-decoration: none;
+    color: #FFD31D;
+    width: 100%;
+}
+
+.profile-icon:hover {
+    color: #81B214;
+}
+
+.profile-icon-p {
+    margin: 1rem;
+}
+
+.resume-page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 38rem;
+    background-image: url(background1.jpeg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.resume-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.resume-part-position {
+    width: 45%;
+}
+
+.resume-h3 {
+    margin: 0.5rem 0;
+    text-decoration: underline;
+    background-color: #000;
+}
+
+.resume-p {
+    margin: 0.5rem 0;
+    background-color: #000;
+}
+
+.resume-time {
+    font-style: italic;
+}
+
+.resume-ul-projects {
+    padding-left: 1.5rem;
+}
+
+.resume-li-projects {
+    margin: 0.5rem 0;
+}
+
+.resume-ul-work {    
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem;
+}
+
+.resume-li-work {
+    margin: 0.3rem 0;
+    background-color: #000;
+}
+
+.resume-li-work::before {
+    content: "\21E8";
+}
+
+.resume-education {
+    margin: 0.3rem 0;
+}
+
+.resume-education::before {
+    content: "\272F";
+}
+
+.resume-ul-skills {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+}
+
+.resume-li-skills {
+    background-color: #fff;
+    margin: 0.3rem 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.resume-ul-language {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: #7579E7;
+    padding: 0px;
+    margin: 0px;
+}
+
+.resume-dl {
+    margin: 0.5rem 0;
+    background-color: #000;
+    display: block;
+    max-width: 15rem;
+}
+
+.resume-link {
     text-decoration: none;
     color: #FFD31D;
 }
 
-/* graphic component: text color change with pseudo-class*/
-p > a:hover {
+.resume-link:hover {
     color: #81B214;
 }
 
-section > h2 {
-    margin-bottom: 0;
-    font-size: 40px;
-    color: white;
+.other-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13rem 0 0 0 ;
+    font-size: 1.8rem;
 }
 
-/* text component: italic */
-time {
-    color: white;
-    font-size: 20px;
-    font-style: italic;
-}
-
-/* graphic component: adjust the position of nav-bar */
-header > ul {
-    padding: 10px;
+.other-links-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
     margin: auto;
-}
-
-/* responsive design */
-@media screen and (max-width: 1335px) {
-    .header-container2 {
-        margin-right: 110px;
-    }
     
-    .box-1 {
-        width: 27%;
-        margin-left: 100px;
-    }
-    section.box-1 > h2 {
-        font-size: 1.5rem;
-    }
-    section > p {
-        font-size: 1.1rem;
-    }
-    .box-2 {
-        width: 15%;
-    }
-    .box-3 {
-        width: 30%;
-        margin-left: 50px;
-    }
-    section.box-3 > h2 {
-        font-size: 1.5rem;
-    }
-    span {
-        font-size: 1.1rem;
-    }
-
 }
 
-/* responsive design */
-@media screen and (max-width: 1100px) {
-    .container3 {
-        margin: auto;
-        height: auto;
-    } 
+.other-links-icon {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #FFD31D;
+    font-size: 2rem;
+}
 
-    .header-container3 {
-        font-size: 1.5rem;
+.other-links-p {
+    margin: 0.5rem 0;
+}
+
+.other-links-icon:hover {
+    color: #81B214;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .index-h1 {
+        font-size: 2.5rem;
     }
-    .box-4 h2 {
+    .index-subheader {
         font-size: 2rem;
     }
-    .box-4 h3 {
+    .index-button {
+        padding: 0.6rem;
+    }
+    .index-header-container {
+        margin: 0 0 3rem 0;
+    }
+    .index-button-container {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        width: 70%
+    }
+    .eachpage-h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .eachpage-h2 {
         font-size: 1.5rem;
     }
-    .box-4 time span {
-        font-size: 0.5rem;
+    .profile-part-containers {
+        width: 100%;
+        margin: 0;
     }
-    .box-4 p {
-        font-size: 1.2rem;
+    .nav-bar-container {
+        justify-content: center;
+    }
+    .nav-properties {
+        font-size: 0.9rem;
+        margin: 0.2rem;
     }
     .resume-container {
         flex-direction: column;
-        align-items: center;
-    }
-    .box-4 {
         width: 80%;
     }
-    .blog-container {
-        flex-direction: column;
-    }
-
-}
-
-/* responsive design */
-@media screen and (max-width: 1000px) {
-    .box-1 {
-        margin-left: 50px;
-    }
-    section.box-1 > h2 {
-        font-size: 1rem;
-    }
-    section > p {
-        font-size: 1rem;
-    }
-
-    .box-2 {
-        margin: auto;
-    }
-
-    .box-2 > img {
-        width: 165px; 
-        height: 275px;
-    }
-
-    .box-3 {
-        width: 33%;
-        margin: auto;
-    }
-    section.box-3 > h2 {
-        font-size: 1.5rem;
-    }
-    html,body {
-        height: 100%;
-    }
-}
-
-/* responsive design */
-@media screen and (max-width: 800px) {
-    .container1 {
-        background-image: url(background1.jpeg);
-        background-size: cover;
-        Width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-
-    .index-header-container {
-        font-size: 1.5rem;
-    }
-    .index-subheader {
-        font-size: 1.8rem;
-    }
-    button {
-        padding: 10px;
-        font-size: 0.8rem;
-        border: 4px solid #C8C6C6;
-        margin: 25px;
-    }
-    html,body {
-        height: 100%;
-    }
-}
-
-/* responsive design */
-@media screen and (max-width: 765px) {
-    .container2 {
-        height: 100%;
-    }
-
-    .header-container2 {
-        font-size: 1rem;
-        margin: auto;
-    }
-    .profile-container {
-        flex-direction: column;
-    }
-    .box-1 {
+    .resume-part-position {
         width: 100%;
-        text-align: Center;
-        margin: auto;
     }
-    .box-2 {
-        width: 50%;
-        margin-bottom: 35px;
-    }
-
-    .box-2 > img {
-        width: 150px; 
-        height: 250px;
-    }
-
-    .box-3 {
-        width: 80%;
-        text-align: Center;
-    }
-
-    .box-3 > p {
-        background-color: black;
-    }
-
-    .nav-bar {
-        justify-content: center;
-    }
-
-    ul > li {
-        margin: 5px;
-        font-size: 13px;
-    }
-    span {
-        font-size: 0.9rem;
-        margin: 0 14px;
-    }
-    html,body {
-        height: 100%;
-    }
-    .skills > li {
-        font-size: 1.2rem;
-    }
-    .header-container3 {
-        font-size: 1.2rem;
-    }
-    .box-4 h2 {
-        font-size: 1.7rem;
-    }
-    .box-4 h3 {
-        font-size: 1.2rem;
-    }
-    .box-4 p {
+    .resume-h3 {
         font-size: 1rem;
     }
-    .box-7 span {
-        font-size: 1.4rem;
-    }
-    .header-container5 {
-        font-size: 1.5rem;
-    }
-
-}
-
-/* responsive design */
-@media screen and (max-width: 540px) {
-    .container2 {
-        height: auto;
-    }
-    .box-3 {
-        width: 80%;
-        margin-bottom: 120px;
-    }
-
-    .box-2 {
-        justify-content: center;
-    }
-    .box-5 img {
-        width: 230px;
+    .other-links-icon {
+        font-size: 1.2rem;
     }
 }
 
-/* responsive design */
-@media screen and (max-width: 520px) {
-    .index-header-container {
-        font-size: 1rem;
-        bottom: 800px;
+@media screen and (max-width: 700px) {
+    .profile-container {
+        width: 90%
     }
-    .index-subheader {
-        font-size: 1.6rem;
-    }
-    button {
-        padding: 8px;
-        font-size: 0.6rem;
-        border: 3px solid #C8C6C6;
-        margin: 10px 48px;
+}
+
+@media screen and (max-width: 700px) {
+    .resume-container {
+        width: 90%;
     }
 }
