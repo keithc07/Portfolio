@@ -10,17 +10,17 @@
 
   * Sitemap:
   
-    ![screenshot1](docs\screenshot1.png)
+    ![screenshot1](docs/screenshot1.png)
     
   * Screenshots:
   
-    ![screenshot2](docs\screenshot2.png)
+    ![screenshot2](docs/screenshot2.png)
   
-    ![screenshot3](docs\screenshot3.png)
+    ![screenshot3](docs/screenshot3.png)
   
-    ![screenshot4](docs\screenshot4.png)
+    ![screenshot4](docs/screenshot4.png)
   
-    ![screenshot5](docs\screenshot5.png)
+    ![screenshot5](docs/screenshot5.png)
   
   * Target audience: HR or employee of IT and FinTech company
   
